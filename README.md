@@ -8,6 +8,7 @@ You can use this machine to avoid polluting your environment with these dependen
 
 We will assume that you have a functional vagrant install with a provider configured.
 This repo has been tested with the virtualbox provider.
+The machine is configured to have a 20GB disk and 16GB of RAM. You can change these settings in the Vagrant file, but take into account that the build will fail if you go down to 4GB of RAM. 8GB is the recommended minimum.
 
 The steps to get the machine up are the following:
 - checkout this repo
@@ -32,7 +33,7 @@ vagrant ssh
 
 Once logged in, you can follow the build instructions on the [PineCube Wiki](https://wiki.pine64.org/index.php?title=PineCube)
 
-For example. to simply run a build, you can run the following:
+For example, to simply run a build, you can run the following:
 
 ```
 cd pinecube-sdk/camdroid
